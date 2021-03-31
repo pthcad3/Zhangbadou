@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>丈八斗</title>
+<style>
+    *{
+        box-sizing: border-box;
+        }
+        body{
+            margin: 0px;
+            display: flex;
+        }
+       
+        nav{
+            width: 100%;
+            height: 50px;
+            background-color: sienna;
+            padding: 0px 35px;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-around;
+            position: fixed;
+        }
+        
+        .list{
+            display: inline-block;
+            width: 92px;
+            height: 27px;
+            line-height: 27px;
+            margin-top: 11px;
+            text-align: center;
+            color: #969595;
+            color: #3e5054;
+            transition: none;
+            font-weight: 400;
+            border: 1px solid transparent;
+        }
+        main{
+            width: 100%;
+            height: calc(100% - 100px);
+        }
+        .banner{
+            text-align: center;
+            width: 100%;
+            height: 960px;
+            background-color: red;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            
+        }
+        .b_down{
+            width: 50px;
+            height: 50px;
+            background-color:green;
+            border: 2px;
+        }
+        .secret{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 960px;
+        }
+        .origin{
+            height: 300px;
+            width: 450px;
+            background-color:pink;
+            border: 2px;
+            display: flex;
+            align-items: flex-end;
+        }
+        .name{
+            height: 100px;
+            width: 100%;
+            background-color: royalblue;
+        }        
+        .introduction{
+            height: 300px;
+            width: 450px;
+            background-color:pink;
+            border: 2px;
+            display: flex;
+            align-items: flex-end;
+            }
+        .incumbent{
+            height: 100px;
+            width: 100%;
+            background-color: royalblue;
+        }
+        .position{
+            height: 100px;
+            width: 100%;
+            background-color: gold;
+        }
+        .arrival{
+            height: 300px;
+            width: 450px;
+            background-color:pink;
+            border: 2px;
+            display: flex;
+            align-items: flex-end;
+        }
+        .map{
+            height: 100px;
+            width: 100%;
+            background-color: royalblue;
+        }
+        .traffic{
+            height: 100px;
+            width: 100%;
+            background-color: gold;
+        }
+        .s_down{
+            width: 50px;
+            height: 50px;
+            background-color:green;
+            border: 2px;
+            background-position: center;
+            background-size: cover;
+            margin: auto;
+            
+        }
+        .foodie{
+            height: 960px;
+            width: 100%;
+            background-color: gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;        
+        }
+        .f_mid{
+            width: 1090px;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .pitaya{
+            height: 600px;
+            width: 250px;
+            background-color: greenyellow;
+        }
+        .bitter_gourd{
+            height: 600px;
+            width: 250px;
+            background-color:rebeccapurple;
+        }
+        .pumpkin{
+            height: 600px;
+            width: 250px;
+            background-color: goldenrod;
+            
+        }
+        .grape{
+            height: 600px;
+            width: 250px;
+            background-color: black;
+            
+        }
+        .f_down{
+            width: 50px;
+            height: 50px;
+            background-color:green;
+            border: 2px;
+            background-position: center;
+            background-size: cover;
+            margin: auto;
+        }
+        .attractions{
+            height: 1080px;
+            width: 100%;
+            background-color: blanchedalmond;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        
+        }
+        .show{
+            height: 600px;
+            width: 600px;
+            border-radius: 50%;
+            background-color: green;
+
+        }
+        .a_f1{
+            height: 700px;
+            width: 700px;
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: space-between;
+        }
+        .temple{
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            background-color: green;
+        }
+            
+        .deer{
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            background-color: green;
+    }
+        .cellar{
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            background-color: green;
+    }
+        .story{
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            background-color: green;
+    }
+        .a_down{
+            width: 50px;
+            height: 50px;
+            background-color:green;
+            border: 2px;
+            background-position: center;
+            background-size: cover;
+            margin: auto;
+        }
+        .winery{
+            width: 100%;
+            height: 960px;
+            background-color: khaki;
+        }
+        .w_up{
+            width: 100%;
+            display: flex;
+        }
+        .w_box1{
+            width: 480px;
+            height: 450px;
+            background-color: blue;
+        }
+        .w_box2{
+            width: 480px;
+            height: 450px;
+            background-color:red;
+        }
+        .w_box3{
+            width: 480px;
+            height: 450px;
+            background-color: blue;
+        }
+        .w_box4{
+            width: 480px;
+            height: 450px;
+            background-color: red;
+        }
+        .w_mid{
+            width: 100%;
+            display: flex;
+
+        }
+        .w_box5{
+            width: 480px;
+            height: 450px;
+            background-color: hotpink;
+        }
+        .w_box6{
+            width: 480px;
+            height: 450px;
+            background-color:blue;
+        }
+        .w_box7{
+            width: 480px;
+            height: 450px;
+            background-color: hotpink;
+        }
+        .w_box8{
+            width: 480px;
+            height: 450px;
+            background-color:blue;
+        }
+        
+        .w_down{
+            width: 50px;
+            height: 50px;
+            background-color:green;
+            border: 2px;
+            background-position: center;
+            background-size: cover;
+            margin: auto;
+        }
+        .media{
+            height: 960px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            
+        
+        }
+        .reports{
+            width: 500px;
+            height: 600px;
+            background-color: brown;
+            margin-right: 20px;
+            
+        }
+        .view{
+            width: 500px;
+            height: 600px;
+            background-color:royalblue;
+            
+        }
+        footer{
+            width:100% ;
+            height: 300px;
+            display: flex;
+          
+        }
+        .sitemap{
+            height: 200px;
+            background-color: black;
+        }
+</style>
+
+</head>
+<body>
+    <nav>
+        <div class="list">選項A</div>
+        <div class="list">選項B</div>
+        <div class="list">選項C</div>
+        <div class="list">選項D</div>
+        <div class="list">選項E</div>
+        <div class="list">選項F</div>
+        <div class="list">選項G</div>
+        <div class="list">選項H</div>
+    </nav>
+    
+    <main>
+        <div class="banner">
+            <div class="b_down">箭頭下一頁</div>
+        </div>
+        </div>
+        <div class="secret">
+            <div class="origin">
+                <div class="name"></div>
+            </div>
+            <div class="introduction">
+                <div class="incumbent"></div>
+                <div class="position"></div>
+            </div>
+            <div class="arrival">
+                <div class="map"></div>
+                <div class="traffic"></div>
+            </div>
+        </div>
+        <div class="s_down">箭頭下一頁</div>
+        
+        <div class="foodie">
+            <div class="f_mid">
+                <div class="pitaya"></div>
+                <div class="bitter_gourd"></div>
+                <div class="pumpkin"></div>
+                <div class="grape"></div>
+            </div>
+            
+        </div>
+        <div class="f_down">箭頭下一頁</div>
+
+        <div class="attractions">
+            <div class="show"></div>
+            <div class="a_f1">
+               <div class="deer"></div>
+                <div class="temple"></div>
+                <div class="cellar"></div>          
+                <div class="story"></div>
+            </div>
+        </div>
+        <div class="a_down">箭頭下一頁</div>
+
+        <div class="winery">
+            <div class="w_up">
+                <div class="w_box1">酒莊1</div>
+                <div class="w_box2">酒莊2</div>
+                <div class="w_box3">酒莊3</div>
+                <div class="w_box4">酒莊4</div>
+            </div>
+            <div class="w_mid">
+                <div class="w_box5">酒莊5</div>
+                <div class="w_box6">酒莊6</div>
+                <div class="w_box7">酒莊7</div>
+                <div class="w_box8">酒莊8</div>
+            </div>
+            
+        </div>
+        <div class="w_down">箭頭下一頁</div>
+        <div class="media">
+            <div class="reports"> </div>
+            <div class="view"></div>
+        </div>
+  
+    </main>
+    <footer>
+        <div class="sitemap"></div>
+        <div class="copyright"></div>
+
+    </footer>
+
+</body>
+</html>
